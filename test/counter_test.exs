@@ -1,8 +1,7 @@
 defmodule CounterTest do
   use ExUnit.Case
-  doctest Counter
 
-  test "greets the world" do
-    assert Counter.hello() == :world
+  test "inc/1 increments an integer value" do
+    assert Counter.Core.inc(2) == 3
   end
 end
